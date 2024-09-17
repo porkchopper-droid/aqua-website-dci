@@ -128,5 +128,6 @@ footer nav a {
   main aside {
     grid-area: asideGrid;
     margin-left: auto;
+    max-width: 350px;
   }
 }/*# sourceMappingURL=main.css.map */
