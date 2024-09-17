@@ -37,6 +37,7 @@ header .row-2 h2 {
   color: aliceblue;
   text-shadow: 0 0 3px black;
   white-space: nowrap;
+  font-size: 8vw;
 }
 
 main {
