@@ -57,7 +57,7 @@ main {
   margin: 20px;
   .cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
@@ -119,6 +119,31 @@ footer {
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 1220px) {
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "flexGrid flexGrid flexGrid"
+    "articleGrid articleGrid asideGrid";
     
+
+    .cards {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .cards {
+        grid-area: flexGrid;
+    }
+    .article {
+        grid-area: articleGrid;
+        max-width: none;
+    }
+
+    aside {
+        grid-area: asideGrid;
+        margin-left: auto;
+    
+    }
+  }
 }

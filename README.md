@@ -1,3 +1,1 @@
-# The `images` folder
-
-Put any images you want to include in your HTML or stylesheets in here.
+So, what do you say about Thailand?

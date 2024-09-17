@@ -50,7 +50,7 @@ main {
 }
 main .cards {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
@@ -102,4 +102,27 @@ footer nav a {
   color: aliceblue;
   font-size: 20px;
   font-weight: 600;
+}
+
+@media screen and (min-width: 1220px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "flexGrid flexGrid flexGrid" "articleGrid articleGrid asideGrid";
+  }
+  main .cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main .cards {
+    grid-area: flexGrid;
+  }
+  main .article {
+    grid-area: articleGrid;
+    max-width: none;
+  }
+  main aside {
+    grid-area: asideGrid;
+    margin-left: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
