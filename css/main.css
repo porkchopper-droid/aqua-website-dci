@@ -37,7 +37,6 @@ header .row-2 h2 {
   color: aliceblue;
   text-shadow: 0 0 3px black;
   white-space: nowrap;
-  padding: 0 5%;
 }
 
 main {
@@ -104,7 +103,10 @@ footer nav a {
   font-weight: 600;
 }
 
-@media screen and (min-width: 1220px) {
+@media screen and (min-width: 768px) {
+  header .row-2 h2 {
+    font-size: 5vw;
+  }
   main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -113,9 +115,10 @@ footer nav a {
   main .cards {
     flex-direction: row;
     justify-content: space-between;
-  }
-  main .cards {
     grid-area: flexGrid;
+  }
+  main .cards .card {
+    max-width: 350px;
   }
   main .article {
     grid-area: articleGrid;
