@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+footer nav, main, header .row-2, header .row-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer nav a, header .row-1 nav a {
+  text-decoration: none;
+  padding: 0 20px;
+}
+
 body {
   background-color: aliceblue;
   font-family: arial;
@@ -12,21 +23,13 @@ body {
 
 header .row-1 {
   height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .row-1 nav a {
-  text-decoration: none;
-  padding: 0 20px;
-  color: #34729a;
   font-size: 20px;
   font-weight: 600;
 }
+header .row-1 nav a {
+  color: #34729a;
+}
 header .row-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-image: url(../img/header.jpg);
   height: 200px;
   background-position: center;
@@ -41,19 +44,14 @@ header .row-2 h2 {
 }
 
 main {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
   margin: 20px;
 }
 main .cards {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
 }
 main .cards .card {
   border: 0.5px solid black;
@@ -92,16 +90,9 @@ footer nav {
   background-color: #34729a;
   width: 100%;
   height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 footer nav a {
-  text-decoration: none;
-  padding: 0 20px;
   color: aliceblue;
-  font-size: 20px;
-  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
@@ -116,6 +107,7 @@ footer nav a {
   main .cards {
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     grid-area: flexGrid;
   }
   main .cards .card {
